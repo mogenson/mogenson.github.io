@@ -1,0 +1,530 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Amy & Mike are getting married!</title>
+    <meta name="description" content="We would like to invite you to our wedding.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Amy & Mike are getting married">
+    <meta property="og:description" content="We would like to invite you to our wedding.">
+    <meta property="og:image" content="https://amyandmike2020/img/hero-min.jpg">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/alert.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body id="top">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <b>NOTICE:</b> We are closely monitoring the COVID-19 outbreak. As of now, we are proceeding with the wedding as planned. Please check back here for updates or changes.
+</div>
+<section class="hero">
+    <section class="navigation">
+        <header>
+            <div class="header-content">
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Telluride</a></li>
+                            <li><a href="#map">Location</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#travel">Travel</a></li>
+                            <li><a href="#lodging">Lodging</a></li>
+                            <li><a href="#registry">Registry</a></li>
+                            <li><a href="#eng-pics">Engagement</a></li>
+                            <!--<li><a href="#rsvp">RSVP</a></li>-->
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
+    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
+</section>
+
+<section id="invitation" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Amy and Mike are getting married</h3>
+                <p><i>Please join us on the 18<sup>th</sup> of July, 2020 in Telluride, Colorado</i></p>
+                <p class="text-justify">The town of Telluride is nestled in a box canyon in South Western Colorado. The
+                Mogensons have visited Telluride every year since 2002, with Amy joining since 2015. Telluride has
+                become a second home to Amy and Mike. We couldn't imagine a better place to host our wedding!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="video-bg" class="hidden-sm hidden-xs">
+    <div id="bgndVideo" class="player"
+         data-property="{videoURL:'https://youtu.be/IHPgsK0cDdU',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:86, stopAt:340, opacity:1}">
+    </div>
+    <div id="video-content">
+        <h5>Telluride</h5>
+    </div>
+</section>
+
+<section id="map" class="section-padding">
+    <div class="text-center">
+        <h3>Location</h>
+        <p></p>
+    </div>
+    <div id="map-canvas"></div>
+    <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                <div class="text-center">
+                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                    </div>
+                </div>
+                <div id="map-content" class="pointer-events-auto">
+                    <div class="row">
+                        <div class="text-center">
+                            <h5>Allred's Restaurant</h5>
+                            <p>Located at the top of the gondola at an elevation of 10,500 feet, <a
+                            href="https://www.tellurideskiresort.com/events-activities/dining/allreds-restaurant/">Allred's
+                            Restaurant</a> serves local and regional cuisine with mountain-top views of the Telluride
+                            box canyon.</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="events section-padding" id="events">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="header">Events</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                <div class="wp3">
+                    <h5>Ceremony <span class="time">5PM - 6PM</span></h5>
+                    <p>Please join us at the San Sophia overlook for the wedding ceremony. This scenic vista is located
+                    at 10,500 feet, overlooking the San Juan mountains and the town of Telluride. Board
+                    the gondola in either Telluride or Mountain Village and get off at the top station.  Exit the
+                    gondola station and proceed 100 yards up the dirt path to the San Sophia overlook. Welcome
+                    drinks will be served as guests arrive. Note that Summer temperatures can drop to 60 degrees
+                    at the overlook so please dress accordingly!</p>
+                </div>
+                <!--
+                <div class="wp5">
+                    <h5>Cocktail Night <span class="time">7PM - 12AM</span></h5>
+                    <p>This event is no way close to ethnic. The bride & groom would like to have some "shots before the
+                        knot". With booze flowing down the floor and the western attire on, everyone would be busy
+                        showing off their new moves on the stage which they have finely honed. Lastly, expect some beer
+                        pong matches & karaoke for sure.</p>
+                </div>
+                -->
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                <div class="wp4">
+                    <h5>Reception <span class="time">6PM - 12AM</span></h5>
+                    <p>An outdoor cocktail hour will follow the ceremony at the San Sophia overlook. Afterwards,
+                    please proceed to Allred's restaurant, located inside the gondola
+                    station. Dinner and drinks will be served, accompanied by views of the sunset across the
+                    mountain range. Please join us in dancing and celebrating this special occasion. Don't forget
+                    to stay for late night snacks at the end of the reception!</p>
+                </div>
+                <!--
+                <div class="wp6">
+                    <h5>Wedding <span class="time">6PM-12AM</span></h5>
+                    <p>This is the main event in the entire wedding when the bride and the groom tie the
+                        knot. The groom comes with the barat and is greeted by the bride side with some dhol of course
+                        as maximum number of guests would be attending this event. This is when the couple circle the
+                        sacred fire and are finally declared husband and wife.</p>
+                </div>
+                -->
+            </div>
+        </div>
+        <div class="row section-padding">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding">Formal Attire Requested</h3>
+                    <p>
+                        <strong>Men</strong>
+                        <br>
+                        The groom will be wearing a dark suit and tie. Gentlemen guests are encouraged to dress
+                        similarly. Tuxedos are not necessary.
+                    </p>
+                    <p>
+                        <strong>Women</strong>
+                        <br>
+                        Long dresses and upscale cocktail dresses are appropriate. Please
+                        note, the path to the ceremony is unpaved, so consider more conservative heels.
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</section>
+
+<section id="travel" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Getting here</h3>
+                <p>The closest public airport is Montrose, Colorado, with service from American,
+                United, and Delta airlines. Telluride is a 1 hour 30 minute drive from Montrose. Car rentals
+                are available at the airport. However, since you don't need a car to get
+                around town, we encourage guests to book a shuttle from the airport with
+                either <a href="https://www.tellurideexpress.com">Telluride Express</a> or <a
+                href="https://www.mountainlimos.com">Mountain Limo</a>.</p>
+                <p>US News has listed Telluride as the #1 Best Small Town to visit so we hope it's worth your travel!</p>
+                <div data-skyscanner-widget="SearchWidget"
+                     data-locale="en-US"
+                     data-market="US"
+                     data-currency="USD"
+                     data-origin-geo-lookup="true"
+                     data-button-colour="#E8CA6F"
+                     data-button-font-colour="#fff"
+                     data-powered-by-logo-colour="light"
+                     data-widget-scale="1.4"
+                     data-destination-iata-code="'MTJ'">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="lodging" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Where to stay</h3>
+                <p>The sister towns of <a href="https://www.visittelluride.com">Telluride</a> and <a
+                href="https://townofmountainvillage.com/">Mountain Village</a> are linked via a free, public <a
+                href="https://www.tellurideskiresort.com/the-mountain/gondola/">gondola</a>. Telluride offers
+                walkable bars, restaurants, cafés, and shopping in a historic mining town. Mountain
+                Village has 360 degree panoramic views, larger accommodations, and a free <a
+                href="https://tmvoa.org/member-resources/dial-a-ride/">Dial-A-Ride</a> taxi service.</p>
+            </div>
+        </div>
+        <div class="row section-padding">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#booking-modal">
+                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Booking Information
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="booking-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding">Discounted Accommodations</h3>
+                    <p>
+                        <strong>The Peaks</strong>
+                        <br>
+                        <a href="https://www.thepeaksresort.com">The Peaks Resort</a> is the largest hotel in Mountain
+                        Village. It's located on the golf course and is a short walk from the gondola. Please use
+                        <a href="https://gc.synxis.com/rez.aspx?Hotel=66431&Chain=19071&arrive=7/17/2020&depart=7/19/2020&rate=Valera-Mogenson">
+                        this booking link</a> for a 10% discount on your room rate.
+                    </p>
+                    <p>
+                        <strong>Rental Properties</strong>
+                        <br>
+                        Most Airbnb and VRBO homes in Telluride and Mountain Village are rented by local property management companies.
+                        Please use the contact information below for discount when booking directly through the property management companies.
+                        Most rental companies also have a deals on golf, spa treatments, and other activities, if you are interested.
+                        <table style="padding: 8px; width: 100%">
+                          <tr>
+                            <th>Company</th>
+                            <th>Code</th>
+                            <th>Discount</th>
+                          </tr>
+                          <tr>
+                            <td><a href="https://www.exceptionalstays.com">Exceptional Stays</a></td>
+                            <td style="font-family:monospace">Valera-Mogenson Wedding</td>
+                            <td>10%</td>
+                          </tr>
+                          <tr>
+                            <td><a href="https://www.telluridelodging.com/">Telluride Alpine Lodging</a></td>
+                            <td style="font-family:monospace">VALERAMOGENSON2020</td>
+                            <td>10%</td>
+                          </tr>
+                          <tr>
+                            <td><a href="https://tellurideresortlodging.com/">Telluride Resort Lodging</a></td>
+                            <td style="font-family:monospace">VALERA2020</td>
+                            <td>5%</td>
+                          </tr>
+                          <tr>
+                            <td><a href="https://www.latitude38vacationrentals.com/">Latitude 38</a></td>
+                            <td style="font-family:monospace">Valera-Mogenson Wedding</td>
+                            <td>10%</td>
+                          </tr>
+                        </table>
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</section>
+
+<section id="registry" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Registry</h3>
+                <p>We recognize the time and effort required to attend a destination wedding. Your presence is the
+                greatest gift we could ask for, and the only gift we ask for. However, a link to our registry is
+                provied below for those who wish to give an item.</p>
+            </div>
+        </div>
+        <div class="row section-padding">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <a class="btn btn-accent btn-small" href="https://www.zola.com/registry/amyandmike2020">
+                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;View Registry
+                </a>
+            </div>
+        </div>    </div>
+</section>
+
+<section id="eng-pics" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Engagement</h3>
+                <p>Amy returned home on January 3rd to find her childhood NES game console loaded with
+                a custom cartridge, programmed by Mike. If Amy could beat the game, she would unlock a secret
+                message telling her to meet a waiting future fiancé at the spot where they first met. Could she do it?</p>
+                <video class="hidden-sm hidden-xs" width="512" height="448" autoplay loop muted>
+                    <source src="img/amy-game-playthrough.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <p></p>
+        <div class="row">
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/eng2.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/eng2.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/eng8.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/eng8.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/eng12.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/eng12.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/eng14.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/eng14.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/eng16.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/eng16.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/eng18.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/eng18.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row hidden-lg hidden-md hidden-xs">
+            <div class="col-xs-12 section-border section-padding"></div>
+        </div>
+    </div>
+</section>
+
+<p></p>
+
+<!--
+<section class="rsvp text-center" id="rsvp">
+
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3>Thank you!</h3>
+                        <p>We are glad to see you join us on our big day.</p>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div><!- - /.modal-content - ->
+        </div><!- - /.modal-dialog - ->
+    </div><!- - /.modal - ->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>RSVP</h3>
+                <p></p>
+                <form id="rsvp-form" class="rsvp-form"
+                      action=""
+                      method="POST">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                     placeholder="Your email"
+                                                                     required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="name" class=""
+                                                                 placeholder="Your name"
+                                                                 required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
+                                                                  max="4"
+                                                                  placeholder="Husband/Wife or kids"
+                                                                  required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                                                class="" min="0"
+                                                                placeholder="Invite code"
+                                                                required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper"></div>
+                    </div>
+                    <button class="btn-fill rsvp-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center content">
+                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                <p>Created by Michael (How do I HTML?) Mogenson <i class="fa fa-copyright"></i>2020</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="js/vendor/ouical.js"></script>
+<script src="js/scripts.min.js"></script>
+<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASj_txk8E4r3qg1ddYqpP-19excmASEBg&callback=initMap"></script>
+<!-- Google Analytics -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-142163936-1', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
