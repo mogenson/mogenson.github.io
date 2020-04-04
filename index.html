@@ -38,10 +38,11 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<div class="alert">
+<div class="alert" id="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
   <b>NOTICE:</b> We are closely monitoring the COVID-19 outbreak. As of now, we are proceeding with the wedding as planned. Please check back here for updates or changes.
 </div>
+<script>window.onscroll=function(){document.getElementById("alert").style.display="none";window.onscroll = null;}</script>
 <section class="hero">
     <section class="navigation">
         <header>
