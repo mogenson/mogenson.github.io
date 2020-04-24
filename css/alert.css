@@ -1,5 +1,6 @@
 /* The alert message box */
 .alert {
+    text-align: center;
     padding: 20px;
     background-color: #f44336; /* Red */
     color: white;
