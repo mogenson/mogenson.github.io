@@ -41,8 +41,9 @@
 <!--<div class="alert" id="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
   <b>NOTICE:</b> Due to COVID-19, the wedding date has changed! Please read below.
-</div>-->
+</div>
 <script>window.onscroll=function(){document.getElementById("alert").style.display="none";window.onscroll = null;}</script>
+-->
 <section class="hero">
     <section class="navigation">
         <header>
@@ -58,6 +59,7 @@
                             <li><a href="#lodging">Lodging</a></li>
                             <li><a href="#registry">Registry</a></li>
                             <li><a href="#eng-pics">Engagement</a></li>
+                            <li><a href="#photos">Photos</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -98,9 +100,9 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3 style="color: #f44336">COVID-19 Safety Precautions</h3>
-                <p class="text-justify">In order to have a safe and responsible celebration, we are following
+                <p>In order to have a safe and responsible celebration, we are following
                 all County and State safety regulations, guidelines, and screening requirements.</p>
-                <ul class="text-justify">
+                <ul>
                 <li>
                 Our venue requires vaccination or a negative COVID-19 test at least 72 hours before the event.
                 </li>
@@ -370,7 +372,8 @@
                     <i class="fa fa-barcode"></i>&nbsp;&nbsp;View Registry
                 </a>
             </div>
-        </div>    </div>
+        </div>
+    </div>
 </section>
 
 <section id="eng-pics" class="section-padding">
@@ -378,7 +381,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3 class="header">Engagement</h3>
-                <p>Amy returned home on January 3rd to find her childhood NES video game console loaded with
+                <p class="text-justify">Amy returned home on January 3rd to find her childhood NES video game console loaded with
                 a custom cartridge, programmed by Mike. If Amy could beat the game, she would unlock a secret
                 message telling her to meet her waiting fiancé at the spot where they first met. Could she do it?</p>
                 <video class="hidden-sm hidden-xs" width="512" height="448" autoplay loop muted>
@@ -386,6 +389,7 @@
                 </video>
             </div>
         </div>
+<!--
         <p></p>
         <div class="row">
             <div class="col-md-2">
@@ -454,6 +458,39 @@
         <div class="row hidden-lg hidden-md hidden-xs">
             <div class="col-xs-12 section-border section-padding"></div>
         </div>
+    </div>
+-->
+</section>
+
+<section id="photos" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Photos</h3>
+                <p>We've created the following shared photo album to view pictures taken by guests.
+                Please upload your pictures using the button below.</p>
+            </div>
+        </div>
+        <div class="row section-padding">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <a class="btn btn-accent btn-small" href="https://www.dropbox.com/request/2vOrqQyhB8RplvDDpMqw">
+                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Upload Photos
+                </a>
+            </div>
+        </div>
+        <div id="dropbox_gallery" class="row" style="height: 500px;"></div>
+        <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="7mlxvrzpt5mvxdm"></script>
+        <script>
+            var element = document.getElementById("dropbox_gallery");
+            var options = {
+                  link: "https://www.dropbox.com/sh/gupnb7fldbpfzd0/AADYLKN1ILjbkCu2CvOjI-FYa?dl=0",
+                  folder: {
+                    view: "grid",
+                    headerSize: "small"
+                  }
+                }
+                Dropbox.embed(options, element);
+        </script>
     </div>
 </section>
 
